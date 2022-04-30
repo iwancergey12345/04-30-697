@@ -52,7 +52,7 @@ export default function HomeMain({ }) {
             Cross-chain passive income NFTs for the rest of your life.
           </p>
           <div className="grow" />
-          <div className="flex  flex-col lg:flex-row  justify-between gap-5 items-center lg:items-end mb-10">
+          <div className="flex  flex-col lg:flex-row  justify-between gap-x-5 gap-y-10 items-center lg:items-end mb-10">
             <div>
               <p className="flex gap-3 items-center py-2 font-bold text-xl">
                 Discover our NFTs

@@ -14,6 +14,10 @@ const LANGUAGES = [
 export default function Header() {
   const [language, setLanguage] = useState(LANGUAGES[0]);
 
+  const handleMintFruit=()=>{
+    console.log('handle')
+  }
+
   return (
     <div className=" flex items-stretch justify-between bg-sky-400">
       <div className=" flex items-center justify-center w-28 h-28">
@@ -30,15 +34,17 @@ export default function Header() {
         <DropdownMenu
           className='font-bold'
           summary={language.name}>
-          <div className='rounded-md border bg-sky-300 shadow-sm p-5'>
+          <div className='rounded-md  bg-sky-300 shadow-xl py-3 px-1 w-20'>
             {LANGUAGES.map((item, index) =>
-              <button className='rounded-sm p-3 hover:bg-sky-400 w-full' key={index} onClick={() => setLanguage(item)}>
+              <button className='rounded-lg px-3 py-1 hover:bg-sky-400 w-full' key={index} onClick={() => setLanguage(item)}>
                 {item.name}
               </button>
             )}
           </div>
         </DropdownMenu>
-        <button className='rounded-full border-[3px] border-white px-5 font-bold py-2 hover:bg-gray-500/30'>
+        <button className='rounded-full border-[3px] border-white px-5 font-bold py-2 hover:bg-gray-500/30'
+        onClick={handleMintFruit}
+        >
           Mint Fruit
         </button>
        <ModeButton/>
