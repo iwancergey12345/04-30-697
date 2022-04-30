@@ -35,8 +35,8 @@ const NFTFRUITS = [
 export default function HomeMain({ }) {
   return (
     <div className="flex flex-col lg:flex-row ">
-      <div className="flex flex-col items-stretch gap-6 bg-green-400 grow px-7 py-10">
-        <div className="grow flex flex-col justify-between gap-6 p-5 rounded-xl bg-red-400 sm:pr-20">
+      <div className="flex flex-col items-stretch gap-6 grow px-7 py-10  bg-green-400 dark:bg-transparent">
+        <div className="grow flex flex-col justify-between gap-6 p-5 rounded-xl  sm:pr-20 bg-red-400 dark:bg-transparent">
           <p className="text-5xl lg:text-6xl">
             Discover{' '}
             <strong >
@@ -70,7 +70,7 @@ export default function HomeMain({ }) {
 
           </div>
         </div>
-        <div className="flex  gap-3 px-5 py-3 bg-indigo-500 rounded-xl items-center">
+        <div className="flex  gap-3 px-5 py-3  rounded-xl items-center bg-indigo-500 dark:bg-transparent">
           <p className="font-bold text-lg mr-auto">
             Supported by:
           </p>
@@ -81,7 +81,7 @@ export default function HomeMain({ }) {
           }
         </div>
       </div>
-      <div className="bg-yellow-300 grow max-w-md w-full flex items-center">
+      <div className=" grow max-w-md w-full flex items-center bg-yellow-300 dark:bg-sky-300 dark:rounded-lg">
         <Swiper
           style={{
             "--swiper-navigation-color": "#fff",
@@ -109,7 +109,7 @@ export default function HomeMain({ }) {
 
 
       </div >
-      <div className="flex flex-col justify-evenly min-w-[320px] p-16  gap-10 bg-sky-300 ">
+      <div className="flex flex-col justify-evenly min-w-[320px] p-16  gap-10 bg-sky-300 dark:bg-stone-100/10">
         <div >
           <p className="font-bold text-3xl mb-4">
             1000

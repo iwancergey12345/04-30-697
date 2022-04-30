@@ -1,9 +1,13 @@
+import { useEffect } from 'react';
 import Route from './route';
 
-function App() {
+export default function App() {
+
+  const mode = localStorage.getItem('mode') || 'light';
+
+    document.querySelector('html').classList.add(mode);
   return (
-   <Route/>
+    <Route />
   );
 }
 
-export default App;
