@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 import Footer from './Footer';
 import Header from './Header';
 export default function Layout() {
@@ -9,6 +10,7 @@ export default function Layout() {
         <Outlet />
       </div>
       <Footer/>
+      <ScrollToTopButton/>
     </div>
   )
 }

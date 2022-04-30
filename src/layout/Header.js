@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import DropdownMenu from '../components/DropdownMenu';
 import ModeButton from '../components/ModeButton';
-import useMode from '../hooks/useMode';
 import logo from '../logo.svg';
 import { menuConfig } from './NavConfig';
 

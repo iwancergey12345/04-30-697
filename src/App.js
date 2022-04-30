@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Route from './route';
 
 export default function App() {

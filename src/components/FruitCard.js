@@ -22,7 +22,7 @@ export default function FruitCard({ data, className }) {
 
       </div>
       <div className='bg-yellow-300 grow flex items-center justify-center'>
-        <img src={imgSrc} loading='lazy' width='100px' height='auto' className='object-center object-cover' />
+        <img src={imgSrc} loading='lazy' alt="" width='100px' height='auto' className='object-center object-cover' />
       </div>
       <div className='flex justify-between '>
         <div className=''>

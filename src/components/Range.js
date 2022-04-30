@@ -24,7 +24,7 @@ export default function Range({ max, value = 0, onValue, className, unit = '', r
   return (
     <div className="h-10">
       <div className={`relative h-2 bg-sky-300 w-full cursor-pointer ${className}`}
-        style={{ backgroundImage: `linear-gradient(90deg, transparent 0%, transparent ${percent},lightgray ${percent}, lightgray)` }}
+        style={{ backgroundImage: `linear-gradient(90deg, transparent ${percent},lightgray ${percent}, lightgray)` }}
         onMouseDown={readOnly ? () => { } : handleRange}
       >
         <div className='absolute -top-2 -translate-x-1/2 pointer-events-none' style={{ left: percent }}>
